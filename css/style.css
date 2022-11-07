@@ -1,0 +1,126 @@
+/*
+Colors used:
+Background Color (white): #FFFFFF;
+Primary Color (Navy): #1F3C65;
+Secondary Color (Pink):#BE8190;
+Text Color (Black): #000000;
+*/
+body {
+    background-color: #FFFFFF;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.6 color: #000000
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 4em;
+    color: #1F3C65;
+}
+
+h2 {
+    font-size: 3em;
+    color: #BE8190;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2.5em;
+    color: #1F3C65;
+    letter-spacing: 0.05%;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.5em;
+    color: #1F3C65;
+    font-weight: 500;
+}
+nav {
+font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: #BE8190;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+ }
+
+#hello {
+    font-family: 'Caveat', cursive;
+    color: #1F3C65;
+    font-size: 85px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+}
+
+#hero {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #BE8190;
+    text-decoration: none;
+    /* No underlining */
+}
+
+a:hover,
+a:focus {
+    color: #EA2282;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #1F3C65;
+}
+
+a:active {
+    color: #1F3C65;
+}
+
+.button {
+    display: inline-block;
+    background: rgb(240, 190, 148);
+    background: linear-gradient(162deg, rgba(240, 190, 148, 1) 0%, rgba(190, 129, 144, 1) 76%);
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    height: 50px;
+    width: 196px;
+    border-radius: 27.5%;
+    border-bottom: 2px solid #994c30;
+    transition: 0.2s;
+}
+
+.button:hover {
+    opacity: 0.8;
+    /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+}
+
+.button.contact {
+    background-color: transparent;
+    color: #ff7f50;
+    text-transform: uppercase;
+    border: 2px solid #ff7f50;
+}
+
+.button.contact:hover {
+    background-color: #ff7f50;
+    color: #ffffff;
+}
