@@ -9,6 +9,10 @@ Text Color (Black): #000000;
     box-sizing: border-box;
 }
 
+.content {
+    margin-top: 75px;
+}
+
 body {
     background-color: #FFFFFF;
     font-family: 'Nunito Sans', sans-serif;
@@ -113,10 +117,7 @@ a:active {
     padding: 0 15px;
 }
 
-.row {
-    margin: 100px 0;
-    /* 25px top and bottom, 0 left and right */
-}
+
 
 header {
     background-color: #ffffff;
@@ -395,6 +396,9 @@ transform-origin: 50% 50%;
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+    .content {
+        margin-top: -25px;
+    }
     header {
         text-align: unset;
         padding: 20px 0 13px;
@@ -502,6 +506,9 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+    .content {
+        margin-top: 30px;
+    }
     .container {
         max-width: 1200px;
         margin-left: auto;
@@ -618,7 +625,7 @@ Large devices (1024px or larger)
         padding: 10px 0;
         line-height: 1.5;
         margin: 0;
-        max-width: 500px;
+        max-width: 100%;
     }
 
     #bullets {
@@ -743,7 +750,7 @@ X-large devices (1440px or larger)
         padding: 10px 0;
         line-height: 1.5;
         margin: 0;
-        max-width: 600px;
+        max-width: 100%;
     }
 
     #bullets {
@@ -784,4 +791,8 @@ X-large devices (1440px or larger)
         margin: 0;
         padding: 0;
         text-align: right;
+    }
+    .row {
+        margin: 100px 0;
+        /* 25px top and bottom, 0 left and right */
     }
