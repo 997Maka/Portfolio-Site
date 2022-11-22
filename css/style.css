@@ -37,7 +37,7 @@ h1 {
 
 h2 {
     font-size: 1.6em;
-    color: #BE8190;
+    color: #AC5D71;
     font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -75,7 +75,7 @@ ul {
 
 #lessons h4 {
     margin-top: 20px;
-    color: #BE8190;
+    color: #AC5D71;
 }
 
 #bullets {
@@ -85,7 +85,7 @@ ul {
 
 #bullets li::before {
     content: "•";
-    color: #BE8190;
+    color: #AC5D71;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
@@ -420,7 +420,7 @@ Medium devices (640px and larger)
     nav>ul>li>a {
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
-        color: #BE8190;
+        color: #AC5D71;
         font-weight: 500;
         letter-spacing: 0.05em;
         padding: 0;
@@ -452,7 +452,7 @@ Medium devices (640px and larger)
 
     h2 {
         font-size: 1.6em;
-        color: #BE8190;
+        color: #AC5D71;
         font-weight: 500;
         letter-spacing: 0.1em;
         text-transform: uppercase;
@@ -573,7 +573,7 @@ Large devices (1024px or larger)
 
     h2 {
         font-size: 40px;
-        color: #BE8190;
+        color: #AC5D71;
         font-weight: 500;
         letter-spacing: 0.1em;
         text-transform: uppercase;
@@ -713,7 +713,7 @@ X-large devices (1440px or larger)
 
     h2 {
         font-size: 48px;
-        color: #BE8190;
+        color: #AC5D71;
         font-weight: 500;
         letter-spacing: 0.1em;
         text-transform: uppercase;
