@@ -124,7 +124,6 @@ a:active {
 
 header {
     background-color: #ffffff;
-    text-align: center;
     padding: 10px 0;
     position: fixed;
     width: 100%;
@@ -145,19 +144,10 @@ header {
     margin: 10px 0;
 }
 
-nav {
-    display: inline-block;
-    width: 100%
-}
-
 nav>ul {
     list-style-type: none;
     padding: 0;
-    margin: 25px 0;
-}
-
-nav>ul>li {
-    display: inline-block;
+    margin: 0;
 }
 
 nav>ul>li>a {
@@ -169,15 +159,40 @@ nav>ul>li>a {
     padding: 0;
     margin: 0 10px;
     text-transform: uppercase;
-    border-bottom: 3px solid #eaeaea;
     transition: 0.3s;
 }
 
 nav>ul>li>a:hover {
     color: #6e0739;
-    border-bottom: 3px solid #000000;
 }
 
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 24px;
+    padding: 10px 0;
+    margin: 10px 10px 10px 0;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(234,234,234,1);
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 #hero h1 {
     text-align: center;
     font-family: 'Caveat', cursive;
@@ -244,7 +259,7 @@ a.button.contact:hover {
 }
 
 main {
-    padding-top: 161.4px;
+    padding-top: 56px;
     padding-bottom: 50px;
 }
 
@@ -417,6 +432,14 @@ Medium devices (640px and larger)
         margin-top: 4px;
     }
 
+    nav>ul {
+        margin: 1em 0;
+    }
+
+    nav>ul>li {
+        display: inline-block;
+    }
+
     nav>ul>li>a {
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
@@ -427,6 +450,17 @@ Medium devices (640px and larger)
         margin: 0 15px;
         text-transform: uppercase;
         border-bottom: 3px solid #eaeaea;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
+    .navtoggle.responsive li  {
+      border-top: 0 solid white;
     }
 
     main {
@@ -482,6 +516,7 @@ Medium devices (640px and larger)
         padding: 10px 0;
         line-height: 1.5;
         margin: 0;
+        text-align: left;
     }
 
     #contact p {
@@ -499,7 +534,7 @@ Medium devices (640px and larger)
 
     [class*="col-"] {
         float: left;
-        padding-right: 20px;
+        padding: 0 15px;
     }
 
     .row::after {
@@ -508,9 +543,11 @@ Medium devices (640px and larger)
         display: table;
     }
 }
-footer .container{
+
+footer .container {
     padding: 50px 15px;
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -595,7 +632,8 @@ Large devices (1024px or larger)
         padding: 10px 0;
         margin: 0
     }
-    footer .container{
+
+    footer .container {
         padding: 75px 20px;
     }
 
@@ -608,17 +646,17 @@ Large devices (1024px or larger)
     }
 
     #hero h1 {
-        text-align: center;
+        text-align: left;
         font-family: 'Caveat', cursive;
         color: #1F3C65;
         font-size: 66px;
         font-weight: 400;
         letter-spacing: 0.025em;
         margin: 20px 0 0px 25px;
-        text-align: left;
     }
 
     #hero p {
+        text-align: left;
         font-family: 'Poppins', sans-serif;
         font-size: 18px;
         font-weight: 400;
@@ -626,7 +664,6 @@ Large devices (1024px or larger)
         line-height: 1.5;
         margin-left: 25px;
         max-width: 650px;
-        text-align: left;
     }
 
     #contact p {
@@ -652,7 +689,7 @@ Large devices (1024px or larger)
 [class*="col-"] {
     float: left;
     padding-right: 0;
-    padding-left: 100px;
+    padding-left: 50px;
 }
 
 .row::after {
@@ -736,12 +773,12 @@ X-large devices (1440px or larger)
         padding: 10px 0;
         margin: 0
     }
-    footer .container{
+
+    footer .container {
         padding: 150px 40px;
     }
 
     #hero h1 {
-        text-align: center;
         font-family: 'Caveat', cursive;
         color: #1F3C65;
         font-size: 85px;
