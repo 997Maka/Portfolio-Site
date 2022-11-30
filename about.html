@@ -18,17 +18,20 @@
 <body>
     <header>
         <div class="container">
-            <svg width="102" height="51" viewBox="0 0 102 51" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo">
-                <path d="M23 31L44.5 3L77.5 48L100 19.5" stroke="#C17B8D" stroke-width="2.5" stroke-linecap="round" />
-                <path d="M2 31L23.5 3L56.5 48L79 19.5" stroke="black" stroke-width="2.5" stroke-linecap="round" />
-            </svg>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <svg width="102" height="51" viewBox="0 0 102 51" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo">
+                    <path d="M23 31L44.5 3L77.5 48L100 19.5" stroke="#C17B8D" stroke-width="2.5" stroke-linecap="round" />
+                    <path d="M2 31L23.5 3L56.5 48L79 19.5" stroke="black" stroke-width="2.5" stroke-linecap="round" />
+                </svg>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -106,6 +109,7 @@
         <p id="copyright">Copyright Makayla Wang 2022</p>
         </div>
     </footer>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
