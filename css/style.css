@@ -243,6 +243,7 @@ a.button.contact {
     background: transparent;
     color: rgb(255, 255, 255, 85%);
     padding-left: 20px;
+    margin-top: 40px;
     border: 2px solid rgb(255, 255, 255, 55%);
     transition: 0.2s;
 }
@@ -273,6 +274,7 @@ footer {
 #contact h3 {
     color: #ffffff;
     padding-top: 40px;
+    padding-bottom: 20px;
     margin: 0;
 }
 
@@ -450,6 +452,10 @@ Medium devices (640px and larger)
         margin: 0 15px;
         text-transform: uppercase;
         border-bottom: 3px solid #eaeaea;
+    }
+    nav>ul>li>a:hover {
+        color: #6e0739;
+        border-bottom: 3px solid #000000;
     }
 
     .navtoggle li:not(:last-child) {
@@ -639,7 +645,7 @@ Large devices (1024px or larger)
 
     #hero {
         background-color: #FFFFFF;
-        padding: 200px 0;
+        padding: 25px 0;
         display: inline-block;
         width: 100%;
         text-align: center;
@@ -686,11 +692,11 @@ Large devices (1024px or larger)
     padding: 0;
 }
 
-[class*="col-"] {
+/*[class*="col-"] {
     float: left;
     padding-right: 0;
     padding-left: 50px;
-}
+}*/
 
 .row::after {
     content: "";
@@ -708,7 +714,7 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
     .container {
-        max-width: 1400px;
+        max-width: 87%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -775,7 +781,7 @@ X-large devices (1440px or larger)
     }
 
     footer .container {
-        padding: 150px 40px;
+        padding: 150px 25px;
     }
 
     #hero h1 {
@@ -784,7 +790,7 @@ X-large devices (1440px or larger)
         font-size: 85px;
         font-weight: 400;
         letter-spacing: 0.025em;
-        margin: 20px 0 0px 60px;
+        margin: 20px 0 0px 55px;
         text-align: left;
     }
 
@@ -805,7 +811,7 @@ X-large devices (1440px or larger)
         font-weight: 400;
         padding: 10px 0;
         line-height: 1.5;
-        margin: 0;
+        margin-right: 10px;
         max-width: 100%;
     }
 
@@ -814,12 +820,12 @@ X-large devices (1440px or larger)
         font-size: 20px;
     }
 
-    .col-lg-7 {
-        width: 58%;
+    .col-lg-8 {
+        width: 60%;
     }
 
-    .col-lg-5 {
-        width: 42%;
+    .col-lg-4 {
+        width: 40%;
     }
 
     [class*="col-"] {
@@ -838,8 +844,8 @@ X-large devices (1440px or larger)
     .content {
         float: left;
         padding-right: 0;
-        padding-left: 200px;
-        padding-top: 100px;
+        padding-left: 75px;
+        padding-top: 150px;
     }
 
     .row::after {
@@ -865,7 +871,7 @@ X-large devices (1440px or larger)
     }
 
     .row {
-        margin: 100px 0;
+        margin: 15px 0 100px 0;
     }
 
     #skills.row {
