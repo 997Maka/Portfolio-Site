@@ -91,9 +91,11 @@ ul {
     margin-left: -1em;
 }
 
-.aboutimg img {
-    width: 75%;
+.about img {
+    width: 100%;
+    margin-bottom: 15px;
 }
+
 
 img {
     width: 100%;
@@ -182,17 +184,21 @@ nav>ul>li>a:hover {
     padding: 10px 0;
     margin: 10px 10px 10px 0;
 }
+
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
+    padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(234,234,234,1);
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(234, 234, 234, 1);
 }
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
 }
+
 #hero h1 {
     text-align: center;
     font-family: 'Caveat', cursive;
@@ -239,6 +245,27 @@ a.button:hover {
     text-decoration: none;
 }
 
+a.button.download {
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 16px;
+    color: rgb(172, 29, 98, 100%);
+    border: 3px solid #BE8290;
+    transition: 0.2s;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.fa-solid.fa-download {
+    margin-right: 10px;
+}
+
+a.button.download:hover {
+    color: rgb(79, 0, 38, 100%);
+    background: rgb(190, 130, 144, 35%);
+}
+
 a.button.contact {
     background: transparent;
     color: rgb(255, 255, 255, 85%);
@@ -262,6 +289,10 @@ a.button.contact:hover {
 main {
     padding-top: 56px;
     padding-bottom: 50px;
+}
+
+.my.story {
+    width: 100%;
 }
 
 footer {
@@ -306,15 +337,9 @@ footer {
 #copyright {
     color: rgb(255, 255, 255, 55%);
     font-size: 12px;
-    padding: 5px 0;
+    padding: 0;
     text-align: right;
     margin: 0;
-}
-
-#about-picture {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
 }
 
 @keyframes color-change {
@@ -453,6 +478,7 @@ Medium devices (640px and larger)
         text-transform: uppercase;
         border-bottom: 3px solid #eaeaea;
     }
+
     nav>ul>li>a:hover {
         color: #6e0739;
         border-bottom: 3px solid #000000;
@@ -465,12 +491,17 @@ Medium devices (640px and larger)
     .navtoggle li:last-child {
         display: none;
     }
-    .navtoggle.responsive li  {
-      border-top: 0 solid white;
+
+    .navtoggle.responsive li {
+        border-top: 0 solid white;
     }
 
     main {
-        padding-top: 250px;
+        padding-top: 150px;
+    }
+
+    .my.story {
+        width: 85%;
     }
 
     body {
@@ -496,7 +527,7 @@ Medium devices (640px and larger)
         font-weight: 500;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        margin: 50px 0 75px 0;
+        margin: 75px 0 75px 0;
         text-align: center;
     }
 
@@ -515,14 +546,26 @@ Medium devices (640px and larger)
         margin: 0
     }
 
+#hero h1{
+    text-align: left;
+    margin-bottom: 10px;
+}
     #hero p {
         font-family: 'Poppins', sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         padding: 10px 0;
         line-height: 1.5;
         margin: 0;
         text-align: left;
+    }
+
+    .about img {
+        width: 85%;
+        margin-bottom: 15px;
+    }
+    .about h3{
+        margin-top: 25px;
     }
 
     #contact p {
@@ -620,7 +663,7 @@ Large devices (1024px or larger)
         font-weight: 500;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        margin: 50px 0 75px 0;
+        margin: 50px 0 40px 0;
         text-align: center;
     }
 
@@ -637,6 +680,9 @@ Large devices (1024px or larger)
         font-weight: 500;
         padding: 10px 0;
         margin: 0
+    }
+    .about h3{
+        margin-top: 50px;
     }
 
     footer .container {
@@ -672,6 +718,15 @@ Large devices (1024px or larger)
         max-width: 650px;
     }
 
+    .my.story {
+        width: 75%;
+    }
+
+    .about img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
     #contact p {
         font-family: 'Poppins', sans-serif;
         font-size: 18px;
@@ -688,16 +743,11 @@ Large devices (1024px or larger)
     }
 }
 
-.column.col-md-6.col-lg-9 {
-    padding: 0;
-}
-
 /*[class*="col-"] {
     float: left;
     padding-right: 0;
     padding-left: 50px;
 }*/
-
 .row::after {
     content: "";
     clear: both;
@@ -820,25 +870,25 @@ X-large devices (1440px or larger)
         font-size: 20px;
     }
 
-    .col-lg-8 {
+    .my.story {
         width: 60%;
     }
 
-    .col-lg-4 {
-        width: 40%;
+    .about img {
+        width: 65%;
+        margin-bottom: 25px;
     }
 
     [class*="col-"] {
         float: left;
         padding: 100px 0;
     }
-
-    .column.col-md-6.col-lg-7 {
-        padding: 0;
+    .col-lg-8 {
+        width: 60%;
     }
 
-    .col-md-6 {
-        padding: 0;
+    .col-lg-4 {
+        width: 40%;
     }
 
     .content {
@@ -865,6 +915,7 @@ X-large devices (1440px or larger)
     }
 
     p #copyright {
+font-size: 12px;
         margin: 0;
         padding: 0;
         text-align: right;
