@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Work</title>
+    <title>About</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,10 +19,10 @@
     <header>
         <div class="container">
             <div class="navtoggle" id="myNavtoggle">
-                <svg width="102" height="51" viewBox="0 0 102 51" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo">
+                <a href="index.html"><svg width="102" height="51" viewBox="0 0 102 51" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo">
                     <path d="M23 31L44.5 3L77.5 48L100 19.5" stroke="#C17B8D" stroke-width="2.5" stroke-linecap="round" />
                     <path d="M2 31L23.5 3L56.5 48L79 19.5" stroke="black" stroke-width="2.5" stroke-linecap="round" />
-                </svg>
+                </svg></a>
                 <nav>
                     <ul>
                         <li><a href="index.html">Work</a></li>
@@ -39,13 +39,13 @@
             <div>
                 <h2>About</h2>
             </div>
-            <div>
-                <picture class="aboutimg">
+            <div class="about">
+                <picture>
                     <source srcset="img\About Placeholder1@600px.jpg" media="(max-width:767px)">
                     <img src="img\About Placeholder1@1200px.jpg" alt="My Image">
                 </picture>
                 <div>
-                    <div>
+                    <div class="my story">
                         <h3>My Story</h3>
                         <p>I come from an academic background in public affairs and communications but have always expressed my work through design. Having worked with different audiences and stakeholders at all levels, I love to use quality design
                             to simplify
@@ -59,7 +59,7 @@
                             Mongolian conquest,
                             the next, deep in discussion about time relativity in Interstellar, then playing video games until 3 am. </p>
                         <br>
-                        <a href="files\Makayla Resume July 2022.pdf" Download>Download my Resume</a>
+                        <a href="files\Makayla Resume July 2022.pdf" class="button download" Download><i class="fa-solid fa-download"></i>Download my Resume</a>
                         <br>
                     </div>
                     <div>
@@ -95,7 +95,7 @@
     <footer id="contact">
         <div class="container">
             <h3>Get in Touch</h3>
-            <p>I’d love to grab some coffee and talk about anything – design, history, gaming, surprise me! <br> <br> Send me a message and let’s connect :)</p>
+            <p>I’d love to grab some coffee and talk about anything – design, history, gaming, surprise me! <br> <br> Send me a message and let’s connect.</p>
 
             <div>
                 <a href="mailto:makayla.wang@hotmail.com" class="button contact"><i class="fa-regular fa-paper-plane fa-lg"></i>Email Me</a>
@@ -109,7 +109,7 @@
         <p id="copyright">Copyright Makayla Wang 2022</p>
         </div>
     </footer>
-<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
