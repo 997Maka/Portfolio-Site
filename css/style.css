@@ -591,11 +591,12 @@ Medium devices (640px and larger)
         clear: both;
         display: table;
     }
+    footer .container {
+        padding: 50px 15px;
+    }
 }
 
-footer .container {
-    padding: 50px 15px;
-}
+
 
 /* ==============================
 Large devices (1024px or larger)
@@ -741,8 +742,6 @@ Large devices (1024px or larger)
         list-style: none;
         font-size: 16px;
     }
-}
-
 /*[class*="col-"] {
     float: left;
     padding-right: 0;
@@ -757,6 +756,7 @@ Large devices (1024px or larger)
 .footer.icon a {
     padding: 0 15px;
     color: rgb(255, 255, 255, 35%);
+}
 }
 
 /* ==============================
