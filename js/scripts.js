@@ -6,3 +6,8 @@ function menuToggle() {
    x.className = 'navtoggle';
  }
 }
+
+$('nav ul li a').on('click', function(){
+  $('nav ul li a.active').removeClass('active');
+  $(this).addClass('active');
+  });
